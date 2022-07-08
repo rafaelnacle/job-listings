@@ -12,7 +12,7 @@ function App() {
       <GlobalStyles/>
       <Container>
         <Header />
-        <JobCard />
+        <JobCard/>
       </Container>
     </ThemeProvider>
   );

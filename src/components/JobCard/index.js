@@ -1,9 +1,17 @@
-import { Card, Container } from "./styles";
+import { Card, Container, JobInfo} from "./styles";
 
-export default function JobCard() {
-  <Container>
-    <Card>
-      test
-    </Card>
-  </Container>
+import jobData from "../../data/dataJobs"
+
+export default function JobCard(props) {
+  return (
+    <Container>
+        {jobData.map((data) => {
+          return (
+          <Card key={data.id}>
+            <img src={data.logo} alt="Logo" />
+            <JobInfo/>
+          </Card>)
+        })}
+    </Container>
+  )
 }
