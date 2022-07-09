@@ -13,14 +13,13 @@ export const Container = styled.div`
 export const Card = styled.div`
   height: 130px;
   width: 100%;
-  background: ${({theme}) => theme.colors.primary.light};
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  background: ${({theme}) => theme.colors.primary.main};
+  box-shadow: 1px 3px 8px 2px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   padding: 0 30px;
-
   &  {
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
   }
 
   img {
@@ -30,6 +29,52 @@ export const Card = styled.div`
   }
 `
 
-export const JobInfo = styled.div`
-  
+export const Tags = styled.div`
+  background: ${props => props.new ? 'hsl(180, 29%, 50%)' : 'hsl(180, 14%, 20%)'};
+  border-radius: 10px;
+  width: auto;
+  padding: 10px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: #ffffff !important;
+    font-size: 15px;
+    
+  }
 `
+
+export const JobInfo = styled.div`
+  margin-left: 20px;
+  h3 {
+    color: ${({theme}) => theme.colors.primary.normal}
+  }
+
+  .companyAndTags {
+    display: flex;
+    gap: 15px;
+  }
+`
+
+export const SkillsTags = styled.div`
+  display: flex;
+  margin: 0 auto;
+  margin-right: 50px;
+
+  p {
+    display: flex;
+    justify-content: space-between;
+    background-color: ${({theme}) => theme.colors.primary.light};
+    width: 80px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: ${({theme}) => theme.colors.primary.normal};
+
+    & {
+      margin-left: 10px;
+    }
+  }
+`;

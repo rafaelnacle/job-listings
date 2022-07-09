@@ -4,6 +4,7 @@ export default {
     primary: {
       light: 'hsl(180, 31%, 95%)',
       normal: 'hsl(180, 29%, 50%)',
+      main: '#ffffff',
       dark: 'hsl(180, 8%, 52%)',
       veryDark: 'hsl(180, 14%, 20%)',
     },
