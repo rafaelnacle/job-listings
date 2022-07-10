@@ -4,6 +4,7 @@ import GlobalStyles from '../../assets/styles/global'
 import defaultTheme from '../../assets/styles/themes/default'
 import Header from '../Header';
 import JobCard from '../JobCard';
+import JobFilterCard from '../JobFilterCard';
 import { Container } from './styles';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <GlobalStyles/>
       <Container>
         <Header />
+        <JobFilterCard/>
         <JobCard/>
       </Container>
     </ThemeProvider>
