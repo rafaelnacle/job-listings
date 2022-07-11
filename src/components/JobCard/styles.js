@@ -8,6 +8,13 @@ export const Container = styled.div`
   align-items: center;
   margin: 0 auto;
   margin-top: 50px !important;
+  position: relative;
+
+  @media only screen and (max-width: 600px) {
+    margin: 25px;
+    display: flex;
+  }
+
 `
 
 export const Card = styled.div`
@@ -28,10 +35,26 @@ export const Card = styled.div`
     height: 60px;
     border-radius: 100%;
   }
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 40px 15px 0 15px;
+    flex-direction: column;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -30px;
+      left: 20px;
+    }
+  }
 `
 
 export const Tags = styled.div`
-  background: ${props => props.new ? 'hsl(180, 29%, 50%)' : 'hsl(180, 14%, 20%)'};
+  background: ${props => props.isNew ? 'hsl(180, 29%, 50%)' : 'hsl(180, 14%, 20%)'};
   border-radius: 20px;
   width: auto;
   padding: 5px;
@@ -44,6 +67,8 @@ export const Tags = styled.div`
     color: #ffffff !important;
     font-size: 15px;
   }
+
+
 `
 
 export const JobInfo = styled.div`
@@ -63,16 +88,41 @@ export const JobInfo = styled.div`
     }
   }
 
+  p {
+    color: ${({theme}) => theme.colors.primary.dark};
+  }
+
   .companyAndTags {
     display: flex;
     gap: 15px;
     align-items: center;
+
   }
 
-  p {
-    color: ${({theme}) => theme.colors.primary.dark};
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+
+    .companyAndTags {
+      /* margin-top: -30px; */
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
   }
-  
+
 `
 
 export const SkillsTags = styled.div`
@@ -80,14 +130,14 @@ export const SkillsTags = styled.div`
   margin: 0 auto;
   margin-right: 50px;
 
-
-  p {
+  button {
     display: flex;
     justify-content: space-between;
     background-color: ${({theme}) => theme.colors.primary.light};
     width: 80px;
     height: 30px;
     border-radius: 5px;
+    border: none;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -102,5 +152,15 @@ export const SkillsTags = styled.div`
     & {
       margin-left: 10px;
     }
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    margin: 20px 0;
+    /* padding: 10px; */
+    gap: 5px;
+    width: 100%;
+    flex-wrap: wrap;
+    order: 2;
   }
 `;

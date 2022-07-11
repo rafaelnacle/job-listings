@@ -9,8 +9,6 @@ import insureImg from '../assets/images/insure.svg'
 import eyecamImg from '../assets/images/eyecam-co.svg'
 import theAirFilterImg from '../assets/images/the-air-filter-company.svg'
 
-
-
 const dataJobs =
   [
     {
