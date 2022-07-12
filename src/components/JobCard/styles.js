@@ -18,8 +18,8 @@ export const Container = styled.div`
 `
 
 export const Card = styled.div`
-  height: 130px;
-  width: 100%;
+  height: 150px;
+  width: 90%;
   border-radius: 5px;
   background: ${({theme}) => theme.colors.primary.main};
   box-shadow: 1px 3px 8px 2px rgba(0,0,0,0.2);
