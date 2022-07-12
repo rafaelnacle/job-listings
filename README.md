@@ -12,7 +12,6 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -27,6 +26,8 @@ Users should be able to:
 - Filter job listings based on the categories
 
 ### Screenshot
+
+![image](https://user-images.githubusercontent.com/54647722/178378432-2d97758d-5c45-456a-8e22-57ea9ba4f377.png)
 
 ### Links
 
