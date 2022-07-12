@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://rafaelnacle.github.io/job-listings/)
 
 ## My process
 I started with the basic homepage and the layout, once I was happy with the main layout I decided to work on getting the fake API to work, after that worked on the Filters and had a really hard time with it, I had to go get some help on google. But I manage to get part of it working, had to scavenge on other people code and adapt my code and components. After making that work, I started adding some media queries for the mobile responsiveness.
